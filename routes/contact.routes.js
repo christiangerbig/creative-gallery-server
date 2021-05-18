@@ -25,12 +25,12 @@ router.post(
       return;
     }
     // Create message
-    newRequest = {
+    const request = {
       email,
       subject,
       message
     }
-    RequestModel.create(newRequest)
+    RequestModel.create(request)
       .then(
         (response) => {
           res.status(200).json(response);
