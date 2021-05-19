@@ -49,32 +49,4 @@ router.post(
   }
 );
 
-/*router.post(
-  "/request",
-  (req, res) => {
-    const { email, subject, message } = req.body;
-    newRequest = {
-      email,
-      subject,
-      message
-    }
-    RequestModel.create(newRequest)
-      .then(
-        (response) => {
-          res.status(200).json(response);
-        }
-      )
-      .catch(
-        (err) => {
-          res.status(500).json(
-            {
-              errorMessage: "Create request failed",
-              message: err
-            }
-          );
-        }
-      );
-  }
-);*/
-
 module.exports = router;
