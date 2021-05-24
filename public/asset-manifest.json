@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.deb2d783.chunk.css",
-    "main.js": "/static/js/main.630c595c.chunk.js",
-    "main.js.map": "/static/js/main.630c595c.chunk.js.map",
+    "main.css": "/static/css/main.2e036224.chunk.css",
+    "main.js": "/static/js/main.dd5f213e.chunk.js",
+    "main.js.map": "/static/js/main.dd5f213e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d07132da.js",
     "runtime-main.js.map": "/static/js/runtime-main.d07132da.js.map",
     "static/js/2.f25cb27a.chunk.js": "/static/js/2.f25cb27a.chunk.js",
     "static/js/2.f25cb27a.chunk.js.map": "/static/js/2.f25cb27a.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.deb2d783.chunk.css.map": "/static/css/main.deb2d783.chunk.css.map",
+    "static/css/main.2e036224.chunk.css.map": "/static/css/main.2e036224.chunk.css.map",
     "static/js/2.f25cb27a.chunk.js.LICENSE.txt": "/static/js/2.f25cb27a.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/tribar-md.38141bb4.png",
     "static/media/jungle-swap.04645ba1.png": "/static/media/jungle-swap.04645ba1.png",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.d07132da.js",
     "static/js/2.f25cb27a.chunk.js",
-    "static/css/main.deb2d783.chunk.css",
-    "static/js/main.630c595c.chunk.js"
+    "static/css/main.2e036224.chunk.css",
+    "static/js/main.dd5f213e.chunk.js"
   ]
 }
