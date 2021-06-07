@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const RequestModel = require("../models/Request.model");
 
-// ------------------------------ Create request ---------------------------
+// POST request
 router.post(
   "/request", 
   (req, res) => {
@@ -24,7 +24,6 @@ router.post(
       );
       return;
     }
-    // Create message
     const request = {
       email,
       subject,
