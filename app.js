@@ -42,7 +42,7 @@ app.use("/api", contactRoutes);
 
 app.use(
   (req, res, next) => {
-	  // If no routes match, send them the React HTML.
+	  // If no routes match, send React HTML.
 	  res.sendFile(__dirname + "/public/index.html");
   }
 );
