@@ -7,7 +7,6 @@ const app = express();
 // Run middlewares
 require("./config")(app);
 
-// Setup connect-mongo
 const session = require("express-session");
 const MongoStore = require("connect-mongo").default;
 
@@ -42,8 +41,7 @@ app.use("/api", contactRoutes);
 
 app.use(
   (req, res, next) => {
-	  // If no routes match, send React HTML.
-	  res.sendFile(__dirname + "/public/index.html");
+	  res.sendFile(__dirname + "/public/index.html"); // If no routes match, send React HTML.
   }
 );
 
