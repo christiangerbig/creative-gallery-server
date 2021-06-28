@@ -40,9 +40,7 @@ const contactRoutes = require("./routes/contact.routes");
 app.use("/api", contactRoutes);
 
 app.use(
-  (req, res, next) => {
-	  res.sendFile(__dirname + "/public/index.html"); // If no routes match, send React HTML.
-  }
+  (req, res, next) => res.sendFile(__dirname + "/public/index.html") // If no routes match, send React HTML
 );
 
 // Error handling
