@@ -2,7 +2,7 @@ const router = require("express").Router();
 
 router.get(
   "/", 
-  (req, res) => res.json("Side loaded")
+  (req, res) => res.json("Site loaded")
 );
 
 module.exports = router;

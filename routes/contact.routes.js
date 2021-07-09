@@ -6,8 +6,8 @@ router.post(
   "/request",
   (req, res) => {
     const { email, subject, message } = req.body;
-    // Server side validation
     if (!email || !subject || !message) return res.status(500).json({errorMessage: "Please enter email, subject and message"});
+    // Check email format
     const myRegex = new RegExp(/^[a-z0-9](?!.*?[^\na-z0-9]{2})[^\s@]+@[^\s@]+\.[^\s@]+[a-z0-9]$/);
     if (!myRegex.test(email)) return res.status(500).json({errorMessage: "Email format not correct"});
     const request = {
