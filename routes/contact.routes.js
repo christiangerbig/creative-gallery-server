@@ -5,7 +5,7 @@ const RequestModel = require("../models/Request.model");
 router.post(
   "/request",
   (req, res) => {
-    const { email, subject, message } = req.body;
+    const {email, subject, message} = req.body;
     if (!email || !subject || !message) return res.status(500).json({errorMessage: "Please enter email, subject and message"});
     // Check email format
     const myRegex = new RegExp(/^[a-z0-9](?!.*?[^\na-z0-9]{2})[^\s@]+@[^\s@]+\.[^\s@]+[a-z0-9]$/);
@@ -17,10 +17,10 @@ router.post(
     }
     RequestModel.create(request)
       .then(
-        (response) => res.status(200).json(response)
+        response => res.status(200).json(response)
       )
       .catch(
-        (err) => res.status(500).json(
+        err => res.status(500).json(
           {
             errorMessage: "Create request failed",
             message: err
