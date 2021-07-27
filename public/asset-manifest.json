@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.83125912.chunk.css",
-    "main.js": "/static/js/main.5c7877a1.chunk.js",
-    "main.js.map": "/static/js/main.5c7877a1.chunk.js.map",
+    "main.css": "/static/css/main.219074f4.chunk.css",
+    "main.js": "/static/js/main.536898ab.chunk.js",
+    "main.js.map": "/static/js/main.536898ab.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d07132da.js",
     "runtime-main.js.map": "/static/js/runtime-main.d07132da.js.map",
     "static/js/2.637d5d41.chunk.js": "/static/js/2.637d5d41.chunk.js",
     "static/js/2.637d5d41.chunk.js.map": "/static/js/2.637d5d41.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.83125912.chunk.css.map": "/static/css/main.83125912.chunk.css.map",
+    "static/css/main.219074f4.chunk.css.map": "/static/css/main.219074f4.chunk.css.map",
     "static/js/2.637d5d41.chunk.js.LICENSE.txt": "/static/js/2.637d5d41.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/static/media/tribar-md.38141bb4.png",
+    "static/media/App.min.css": "/static/media/tribar-md.38141bb4.png",
     "static/media/jungle-swap.04645ba1.png": "/static/media/jungle-swap.04645ba1.png",
     "static/media/letter-shooter.a0667b69.png": "/static/media/letter-shooter.a0667b69.png",
     "static/media/portrait-mono.1280cc4b.png": "/static/media/portrait-mono.1280cc4b.png",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.d07132da.js",
     "static/js/2.637d5d41.chunk.js",
-    "static/css/main.83125912.chunk.css",
-    "static/js/main.5c7877a1.chunk.js"
+    "static/css/main.219074f4.chunk.css",
+    "static/js/main.536898ab.chunk.js"
   ]
 }
