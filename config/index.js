@@ -4,19 +4,16 @@ const cookieParser = require("cookie-parser");
 const cors = require("cors");
 
 // Middleware configuration
-module.exports = app => {
-
+module.exports = (app) => {
   // Requests from outside
   app.set("trust proxy", 1);
 
   // Pass headers from frontend
   app.use(
-    cors(
-      {
+    cors({
       credentials: true,
-      origin: process.env.ORIGIN || "http://localhost:3000"
-      }
-    )
+      origin: process.env.ORIGIN || "http://localhost:3000",
+    })
   );
 
   // Logs for development
@@ -26,4 +23,4 @@ module.exports = app => {
   app.use(express.json());
   app.use(express.urlencoded({ extended: false }));
   app.use(cookieParser());
-}
+};
