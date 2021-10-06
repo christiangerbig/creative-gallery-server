@@ -1,26 +1,35 @@
 {
   "files": {
-    "main.css": "/static/css/main.09643003.chunk.css",
-    "main.js": "/static/js/main.1932eea2.chunk.js",
-    "main.js.map": "/static/js/main.1932eea2.chunk.js.map",
+    "main.css": "/static/css/main.b46f9766.chunk.css",
+    "main.js": "/static/js/main.e1b11045.chunk.js",
+    "main.js.map": "/static/js/main.e1b11045.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d07132da.js",
     "runtime-main.js.map": "/static/js/runtime-main.d07132da.js.map",
-    "static/js/2.9cf5a7c1.chunk.js": "/static/js/2.9cf5a7c1.chunk.js",
-    "static/js/2.9cf5a7c1.chunk.js.map": "/static/js/2.9cf5a7c1.chunk.js.map",
+    "static/js/2.b7b5bfb2.chunk.js": "/static/js/2.b7b5bfb2.chunk.js",
+    "static/js/2.b7b5bfb2.chunk.js.map": "/static/js/2.b7b5bfb2.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.09643003.chunk.css.map": "/static/css/main.09643003.chunk.css.map",
-    "static/js/2.9cf5a7c1.chunk.js.LICENSE.txt": "/static/js/2.9cf5a7c1.chunk.js.LICENSE.txt",
-    "static/media/App.min.css": "/static/media/tribar-md.38141bb4.png",
+    "static/css/main.b46f9766.chunk.css.map": "/static/css/main.b46f9766.chunk.css.map",
+    "static/js/2.b7b5bfb2.chunk.js.LICENSE.txt": "/static/js/2.b7b5bfb2.chunk.js.LICENSE.txt",
+    "static/media/Bootstrap-Logo.527d0fc0.svg": "/static/media/Bootstrap-Logo.527d0fc0.svg",
+    "static/media/Cloudinary-Logo.df0c0e93.svg": "/static/media/Cloudinary-Logo.df0c0e93.svg",
+    "static/media/GitHub-Logo.11619ac0.svg": "/static/media/GitHub-Logo.11619ac0.svg",
+    "static/media/JavaScript(ES6)-Logo.a309520a.svg": "/static/media/JavaScript(ES6)-Logo.a309520a.svg",
+    "static/media/MongoDB-Logo.153b7b44.svg": "/static/media/MongoDB-Logo.153b7b44.svg",
+    "static/media/NPM-Logo.5620a716.svg": "/static/media/NPM-Logo.5620a716.svg",
+    "static/media/NodeJS-Logo.5a3a9ca2.svg": "/static/media/NodeJS-Logo.5a3a9ca2.svg",
+    "static/media/React-Logo.ae626225.svg": "/static/media/React-Logo.ae626225.svg",
+    "static/media/Redux-Logo.a9567540.svg": "/static/media/Redux-Logo.a9567540.svg",
+    "static/media/Sass-Logo.8351205a.svg": "/static/media/Sass-Logo.8351205a.svg",
+    "static/media/TypeScript-Logo.17d5e87e.svg": "/static/media/TypeScript-Logo.17d5e87e.svg",
+    "static/media/Visual-Studio-Code-Logo.f57bbf46.svg": "/static/media/Visual-Studio-Code-Logo.f57bbf46.svg",
     "static/media/jungle-swap.04645ba1.png": "/static/media/jungle-swap.04645ba1.png",
     "static/media/letter-shooter.a0667b69.png": "/static/media/letter-shooter.a0667b69.png",
-    "static/media/portrait-mono.1280cc4b.png": "/static/media/portrait-mono.1280cc4b.png",
-    "static/media/trackertools.cdf33462.png": "/static/media/trackertools.cdf33462.png",
-    "static/media/tribar-sm.8dd4f7ed.png": "/static/media/tribar-sm.8dd4f7ed.png"
+    "static/media/trackertools.cdf33462.png": "/static/media/trackertools.cdf33462.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d07132da.js",
-    "static/js/2.9cf5a7c1.chunk.js",
-    "static/css/main.09643003.chunk.css",
-    "static/js/main.1932eea2.chunk.js"
+    "static/js/2.b7b5bfb2.chunk.js",
+    "static/css/main.b46f9766.chunk.css",
+    "static/js/main.e1b11045.chunk.js"
   ]
 }
