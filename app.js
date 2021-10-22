@@ -1,15 +1,14 @@
-import configMiddlewares from "./config/index";
-import express, { static } from "express";
-import session from "express-session";
-import MongoStore from "connect-mongo";
-import { join } from "path";
-import allRoutes from "./routes";
-import contactRoutes from "./routes/contact.routes";
-import errorHandling from "./error-handling";
+require("dotenv/config");
+require("./db");
 
+const express = require("express");
 const app = express();
 
-configMiddlewares(app); // Run middlewares
+// Run middlewares
+require("./config")(app);
+
+const session = require("express-session");
+const MongoStore = require("connect-mongo").default;
 
 app.use(
   session({
@@ -27,16 +26,65 @@ app.use(
   })
 );
 
-app.use(static(join(__dirname, "public")));
+const path = require("path");
+app.use(express.static(path.join(__dirname, "public")));
 
 // Routes
+const allRoutes = require("./routes");
 app.use("/api", allRoutes);
+
+const contactRoutes = require("./routes/contact.routes");
 app.use("/api", contactRoutes);
+
 app.use(
-  (req, res) => res.sendFile(__dirname + "/public/index.html") // If no routes match, send React HTML
+  (req, res, next) => res.sendFile(__dirname + "/public/index.html") // If no routes match, send React HTML
 );
 
 // Error handling
-errorHandling(app);
+require("./error-handling")(app);
 
-export default app;
+module.exports = app;
+
+
+// import configMiddlewares from "./config/index";
+// import express, { static } from "express";
+// import session from "express-session";
+// import MongoStore from "connect-mongo";
+// import { join } from "path";
+// import allRoutes from "./routes";
+// import contactRoutes from "./routes/contact.routes";
+// import errorHandling from "./error-handling";
+
+// const app = express();
+
+// configMiddlewares(app); // Run middlewares
+
+// app.use(
+//   session({
+//     secret: "NotMyAge",
+//     saveUninitialized: false,
+//     resave: false,
+//     cookie: {
+//       maxAge: 1000 * 60 * 60 * 24, // In milliseconds expiring in 1 day
+//     },
+//     store: new MongoStore({
+//       mongoUrl:
+//         process.env.MONGODB_URI || "mongodb://localhost/creative-gallery",
+//       ttl: 60 * 60 * 24, // In seconds expiring in 1 day
+//     }),
+//   })
+// );
+
+// app.use(static(join(__dirname, "public")));
+
+// // Routes
+// app.use("/api", allRoutes);
+// app.use("/api", contactRoutes);
+// app.use(
+//   (req, res) => res.sendFile(__dirname + "/public/index.html") // If no routes match, send React HTML
+// );
+
+// // Error handling
+// errorHandling(app);
+
+// export default app;
