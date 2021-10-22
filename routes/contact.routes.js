@@ -1,5 +1,6 @@
-const router = require("express").Router();
-const RequestModel = require("../models/Request.model");
+import RequestModel from "../models/Request.model";
+import { Router } from "express";
+const router = Router();
 
 // POST Request
 router.post("/request", (req, res) => {
@@ -29,4 +30,4 @@ router.post("/request", (req, res) => {
     );
 });
 
-module.exports = router;
+export default router;

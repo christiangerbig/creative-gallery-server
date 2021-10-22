@@ -1,14 +1,15 @@
-require("dotenv/config");
-require("./db");
+import configMiddlewares from "./config/index";
+import express, { static } from "express";
+import session from "express-session";
+import MongoStore from "connect-mongo";
+import { join } from "path";
+import allRoutes from "./routes";
+import contactRoutes from "./routes/contact.routes";
+import errorHandling from "./error-handling";
 
-const express = require("express");
 const app = express();
 
-// Run middlewares
-require("./config")(app);
-
-const session = require("express-session");
-const MongoStore = require("connect-mongo").default;
+configMiddlewares(app); // Run middlewares
 
 app.use(
   session({
@@ -26,21 +27,16 @@ app.use(
   })
 );
 
-const path = require("path");
-app.use(express.static(path.join(__dirname, "public")));
+app.use(static(join(__dirname, "public")));
 
 // Routes
-const allRoutes = require("./routes");
 app.use("/api", allRoutes);
-
-const contactRoutes = require("./routes/contact.routes");
 app.use("/api", contactRoutes);
-
 app.use(
-  (req, res, next) => res.sendFile(__dirname + "/public/index.html") // If no routes match, send React HTML
+  (req, res) => res.sendFile(__dirname + "/public/index.html") // If no routes match, send React HTML
 );
 
 // Error handling
-require("./error-handling")(app);
+errorHandling(app);
 
-module.exports = app;
+export default app;

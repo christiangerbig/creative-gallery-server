@@ -1,4 +1,5 @@
-const { Schema, model } = require("mongoose");
+import mongoose from "mongoose";
+const { Schema, model } = mongoose;
 
 const RequestSchema = new Schema({
   email: {
@@ -17,4 +18,4 @@ const RequestSchema = new Schema({
 
 const RequestModel = model("request", RequestSchema);
 
-module.exports = RequestModel;
+export default RequestModel;

@@ -1,10 +1,10 @@
-const express = require("express");
-const logger = require("morgan");
-const cookieParser = require("cookie-parser");
-const cors = require("cors");
+import express from "express";
+import logger from "morgan";
+import cookieParser from "cookie-parser";
+import cors from "cors";
 
-// Middleware configuration
-module.exports = (app) => {
+// Middlewares configuration
+const configMiddlewares =  (app) => {
   // Requests from outside
   app.set("trust proxy", 1);
 
@@ -24,3 +24,5 @@ module.exports = (app) => {
   app.use(express.urlencoded({ extended: false }));
   app.use(cookieParser());
 };
+
+export default configMiddlewares;
