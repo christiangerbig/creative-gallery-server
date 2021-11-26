@@ -2,7 +2,7 @@ const router = require("express").Router();
 const RequestModel = require("../models/Request.model");
 
 // POST Request
-router.post("/request", (req, res) => {
+router.post("/request/create", (req, res) => {
   const { email, subject, message } = req.body;
   if (!email || !subject || !message) {
     res
