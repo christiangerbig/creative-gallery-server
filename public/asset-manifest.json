@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.e3ba02b6.chunk.css",
-    "main.js": "/static/js/main.4ed86dc6.chunk.js",
-    "main.js.map": "/static/js/main.4ed86dc6.chunk.js.map",
+    "main.js": "/static/js/main.4278a771.chunk.js",
+    "main.js.map": "/static/js/main.4278a771.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d07132da.js",
     "runtime-main.js.map": "/static/js/runtime-main.d07132da.js.map",
-    "static/js/2.dfd77434.chunk.js": "/static/js/2.dfd77434.chunk.js",
-    "static/js/2.dfd77434.chunk.js.map": "/static/js/2.dfd77434.chunk.js.map",
+    "static/js/2.5b80234a.chunk.js": "/static/js/2.5b80234a.chunk.js",
+    "static/js/2.5b80234a.chunk.js.map": "/static/js/2.5b80234a.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.e3ba02b6.chunk.css.map": "/static/css/main.e3ba02b6.chunk.css.map",
-    "static/js/2.dfd77434.chunk.js.LICENSE.txt": "/static/js/2.dfd77434.chunk.js.LICENSE.txt",
+    "static/js/2.5b80234a.chunk.js.LICENSE.txt": "/static/js/2.5b80234a.chunk.js.LICENSE.txt",
     "static/media/Bootstrap-Logo.527d0fc0.svg": "/static/media/Bootstrap-Logo.527d0fc0.svg",
     "static/media/Cloudinary-Logo.df0c0e93.svg": "/static/media/Cloudinary-Logo.df0c0e93.svg",
     "static/media/GitHub-Logo.11619ac0.svg": "/static/media/GitHub-Logo.11619ac0.svg",
@@ -28,8 +28,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d07132da.js",
-    "static/js/2.dfd77434.chunk.js",
+    "static/js/2.5b80234a.chunk.js",
     "static/css/main.e3ba02b6.chunk.css",
-    "static/js/main.4ed86dc6.chunk.js"
+    "static/js/main.4278a771.chunk.js"
   ]
 }
