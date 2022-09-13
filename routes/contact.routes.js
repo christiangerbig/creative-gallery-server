@@ -4,10 +4,23 @@ const RequestModel = require("../models/Request.model");
 // POST Request
 router.post("/request/create", (req, res) => {
   const { email, subject, message } = req.body;
-  if (!email || !subject || !message) {
+  // Check request requirements
+  if (!email) {
     res
       .status(500)
-      .json({ errorMessage: "Please enter email, subject and message" });
+      .json({ errorMessage: "Please enter email" });
+    return;
+  }
+  if (!subject) {
+    res
+      .status(500)
+      .json({ errorMessage: "Please enter subject" });
+    return;
+  }
+  if (!message) {
+    res
+      .status(500)
+      .json({ errorMessage: "Please enter message" });
     return;
   }
   // Check email format
