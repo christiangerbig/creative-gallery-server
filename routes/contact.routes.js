@@ -8,19 +8,19 @@ router.post("/request/create", (req, res) => {
   if (!email) {
     res
       .status(500)
-      .json({ errorMessage: "Please enter email" });
+      .json({ errorMessage: "Email missing" });
     return;
   }
   if (!subject) {
     res
       .status(500)
-      .json({ errorMessage: "Please enter subject" });
+      .json({ errorMessage: "Subject missing" });
     return;
   }
   if (!message) {
     res
       .status(500)
-      .json({ errorMessage: "Please enter message" });
+      .json({ errorMessage: "Message missing" });
     return;
   }
   // Check email format
@@ -28,7 +28,7 @@ router.post("/request/create", (req, res) => {
     /^[a-z0-9](?!.*?[^\na-z0-9]{2})[^\s@]+@[^\s@]+\.[^\s@]+[a-z0-9]$/
   );
   if (!myRegex.test(email)) {
-    res.status(500).json({ errorMessage: "Email format not correct" });
+    res.status(500).json({ errorMessage: "Invalid email format" });
     return;
   }
   const request = {
