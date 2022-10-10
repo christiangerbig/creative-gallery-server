@@ -28,7 +28,7 @@ router.post("/request/create", (req, res) => {
     /^[a-z0-9](?!.*?[^\na-z0-9]{2})[^\s@]+@[^\s@]+\.[^\s@]+[a-z0-9]$/
   );
   if (!myRegex.test(email)) {
-    res.status(500).json({ errorMessage: "Form: Invalid email format" });
+    res.status(500).json({ errorMessage: "Form: Email format invalid" });
     return;
   }
   const request = {
