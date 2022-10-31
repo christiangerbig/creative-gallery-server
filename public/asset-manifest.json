@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.aaf99662.chunk.css",
-    "main.js": "/static/js/main.77e1066e.chunk.js",
-    "main.js.map": "/static/js/main.77e1066e.chunk.js.map",
+    "main.js": "/static/js/main.d981087d.chunk.js",
+    "main.js.map": "/static/js/main.d981087d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d07132da.js",
     "runtime-main.js.map": "/static/js/runtime-main.d07132da.js.map",
-    "static/js/2.1e085da7.chunk.js": "/static/js/2.1e085da7.chunk.js",
-    "static/js/2.1e085da7.chunk.js.map": "/static/js/2.1e085da7.chunk.js.map",
+    "static/js/2.ecd0043e.chunk.js": "/static/js/2.ecd0043e.chunk.js",
+    "static/js/2.ecd0043e.chunk.js.map": "/static/js/2.ecd0043e.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.aaf99662.chunk.css.map": "/static/css/main.aaf99662.chunk.css.map",
-    "static/js/2.1e085da7.chunk.js.LICENSE.txt": "/static/js/2.1e085da7.chunk.js.LICENSE.txt",
+    "static/js/2.ecd0043e.chunk.js.LICENSE.txt": "/static/js/2.ecd0043e.chunk.js.LICENSE.txt",
     "static/media/Bootstrap-Logo.527d0fc0.svg": "/static/media/Bootstrap-Logo.527d0fc0.svg",
     "static/media/Bulma-Logo.ecefb4da.svg": "/static/media/Bulma-Logo.ecefb4da.svg",
     "static/media/Cloudinary-Logo.df0c0e93.svg": "/static/media/Cloudinary-Logo.df0c0e93.svg",
@@ -35,8 +35,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d07132da.js",
-    "static/js/2.1e085da7.chunk.js",
+    "static/js/2.ecd0043e.chunk.js",
     "static/css/main.aaf99662.chunk.css",
-    "static/js/main.77e1066e.chunk.js"
+    "static/js/main.d981087d.chunk.js"
   ]
 }
