@@ -3,24 +3,20 @@ const RequestModel = require("../models/Request.model");
 
 // POST Request
 router.post("/request/create", (req, res) => {
-  const { email, subject, message } = req.body;
+  const {
+    body: { email, subject, message },
+  } = req;
   // Check request requirements
   if (!email) {
-    res
-      .status(500)
-      .json({ errorMessage: "Form: Email missing" });
+    res.status(500).json({ errorMessage: "Form: Email missing" });
     return;
   }
   if (!subject) {
-    res
-      .status(500)
-      .json({ errorMessage: "Form: Subject missing" });
+    res.status(500).json({ errorMessage: "Form: Subject missing" });
     return;
   }
   if (!message) {
-    res
-      .status(500)
-      .json({ errorMessage: "Form: Message missing" });
+    res.status(500).json({ errorMessage: "Form: Message missing" });
     return;
   }
   // Check email format
